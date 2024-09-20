@@ -662,6 +662,10 @@ th, td{
     color: var(--colorgrey30);
 }
 
+#plan_yearly{
+    display: none;
+}
+
 .plan_container{
     margin-bottom: 49px;
     display: flex;

@@ -61,12 +61,18 @@ function scrollToHeader() {
 function activePlan(active) {
     let monthlyButton = document.querySelector(".monthly");
     let yearlyButton = document.querySelector(".yearly");
+    let monthlyPlan = document.querySelector("#plan_monthly");
+    let yearlyPlan = document.querySelector("#plan_yearly");
 
     if (active === "monthly") {
         monthlyButton.classList.add("active");
         yearlyButton.classList.remove("active");
+        monthlyPlan.style.display = "flex";
+        yearlyPlan.style.display = "none";
     } else if (active === "yearly") {
         yearlyButton.classList.add("active");
         monthlyButton.classList.remove("active");
+        yearlyPlan.style.display = "flex";
+        monthlyPlan.style.display = "none";
     }
 }
