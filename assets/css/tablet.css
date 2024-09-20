@@ -1,0 +1,167 @@
+@media only screen and (max-width: 1440px) {
+*{
+    font-size: 16px;
+}
+html, body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 58px;
+}
+h2{
+    font-size: 28px;
+}
+h3{
+    font-size: 24px;
+}
+/* ! ----------- HEADER, FOOTER ----------- */
+.top_container{
+    height: 44px;
+    margin: 0 4vw;
+}
+/* * ----------- NAVIGATION, FOOTER ----------- */
+nav{
+    padding: 20px 0;
+}    
+nav, .buttom_container{
+    margin: 0 4vw;
+}
+nav .logo p{
+    font-size: 20px;
+}
+/* ? ----------- BUTTONS ----------- */
+button{
+    font-size: 16px;
+}
+/* ? ------------------------------- */
+.nav_container{
+    gap: 30px;
+}
+footer{
+    padding: 20px 0 40px 0;
+}
+.up{
+    width: 48px;
+    height: 48px;
+}
+/* ! ----------- HERO ----------- */
+.hero{
+    margin-bottom: 96px;
+}
+.hero_container{
+    padding-right: 4vw;
+}
+/* ! ----------- FEATURES ----------- */
+.features{
+    margin: 0 4vw 94px 4vw;
+}
+.features > p{
+    margin-bottom: 60px;
+}
+.features_container{
+    gap: 20px;
+}
+.features_card{
+    padding: 40px;
+}
+/* ! ----------- BLOGS ----------- */
+.blogs{
+    margin: 0 4vw 68px 4vw;
+}
+.blogs > p{
+    margin-bottom: 60px;
+}
+.blogs_container{
+    gap: 20px;
+}
+.coment1{
+    width: 100%;
+    justify-content: left;
+}
+.coment2{
+    width: 100%;
+    justify-content: right;
+}
+.coment2 div{
+    width: 48px;
+    height: 48px;
+}
+/* ! ----------- kcal ----------- */
+.kcal{
+    margin: 0 4vw 98px 4vw;
+}
+/* ! ----------- PRICING ----------- */
+.pricing{
+    margin: 0 4vw;
+}
+.tabs_container{
+    margin-bottom: 40px;
+}
+.plan_container{
+    margin-bottom: 81px;
+}
+}
+
+@media only screen and (max-width: 980px) {
+
+/* ! ----------- HEADER, FOOTER ----------- */
+.top_container{
+    height: 41px;
+    margin: 0 2vw;
+}
+nav, .buttom_container{
+    margin: 0 2vw;
+}
+/* ! ----------- FEATURES ----------- */
+.features{
+    margin: 0 2vw 94px 2vw;
+}
+/* ! ----------- BLOGS ----------- */
+.blogs{
+    margin: 0 2vw 68px 2vw;
+}
+.coment{
+    flex-direction: column;
+    gap: 20px;
+}
+/* ! ----------- kcal ----------- */
+.kcal{
+    margin: 0 2vw 98px 2vw;
+}
+.kcal_container{
+    width: 350px;
+}
+.calculate{
+    padding: 41px 2vw 56px 2vw;
+}
+.inputs{
+    gap: 35px 2vw;
+}
+
+/* ! ----------- PRICING ----------- */
+.pricing{
+    margin: 0 2vw;
+}
+}
+
+@media only screen and (max-width: 830px) {
+/* ! ----------- PRICING ----------- */
+.plan_container{
+    flex-direction: column;
+}
+/* ! ----------- FOOTER ----------- */
+.buttom_container{
+    flex-direction: column;
+    gap: 15px;
+}
+.contact_container{
+    width: 100%;
+    flex-direction: column;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

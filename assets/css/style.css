@@ -1,0 +1,696 @@
+@font-face {
+    font-family: "Urbanist-Regular";
+    src: url(../fonts/Urbanist-Regular.ttf);
+}
+@font-face {
+    font-family: "Urbanist-Medium";
+    src: url(../fonts/Urbanist-Medium.ttf);
+}
+@font-face {
+    font-family: "Urbanist-SemiBold";
+    src: url(../fonts/Urbanist-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Urbanist-Bold";
+    src: url(../fonts/Urbanist-Bold.ttf);
+}
+@font-face {
+    font-family: "Urbanist-ExtraBold";
+    src: url(../fonts/Urbanist-ExtraBold.ttf);
+}
+:root{
+    --colorgreen70:#CBEA7B;
+    --colorgreen85:#E5F5BD;
+    --colorgreen95:#F6FBE9;
+    --colorgreen99:#FAFDF2;
+    --colordarkgreen15:#1A3129;
+    --colordarkgreen20:#234338;
+    --colordarkgreen30:#356554;
+    --colorgrey30:#4C4C4D;
+    --colorgrey60:#98989A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist-Regular";
+    font-size: 18px;
+    line-height: 150%;
+
+}
+
+html, body{
+    max-width: 1920px;
+    min-width: 390px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: "Urbanist-Bold";
+    font-size: 58px;
+    color: var(--colordarkgreen15);
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: "Urbanist-Bold";
+    font-size: 50px;
+    color: var(--colordarkgreen15);
+}
+
+h3{
+    font-family: "Urbanist-SemiBold";
+    font-size: 34px;
+    color: var(--colordarkgreen15);
+}
+
+h4{
+    color: var(--colordarkgreen15);
+}
+
+h5{
+    color: var(--colorgrey60);
+}
+
+
+/* ! ----------- HEADER, FOOTER ----------- */
+header, footer{
+    background-color: var(--colordarkgreen15);
+}
+
+header{
+    padding-top: 14px;
+}
+
+.top_container{
+    height: 47px;
+    margin: 0 8vw;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colordarkgreen20);
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid rgb(203, 234, 123, 0.1);
+}
+
+.top_container > img{
+    width: 195px;
+    height: 100px;
+}
+
+header .sub_container{
+    display: flex;
+    align-items: center;
+}
+
+header .sub_container img{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.3vw;
+}
+
+header .sub_container p{
+    margin-right: 1vw;
+    color: white;
+}
+
+header .sub_container i{
+    color: white;
+}
+
+/* * ----------- NAVIGATION, FOOTER ----------- */
+.bar{
+    display: none;
+}
+
+nav, .buttom_container{
+    margin: 0 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    padding: 25px 0;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo p{
+    font-family: "Urbanist-Bold";
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-left: 0.5vw;
+    color: white;
+}
+
+/* ? ----------- BUTTONS ----------- */
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* ? ------------------------------- */
+
+.nav_container{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.buttons_container{
+    display: flex;
+    gap: 1.3vw;
+}    
+
+.button{
+    padding: 14px 24px;
+    background-color: var(--colorgreen70);
+    border-radius: 8px;
+    color: var(--colordarkgreen15);
+}
+
+.buttons_container button, .footer_botton, .up i{
+    color: white;
+}    
+
+footer{
+    padding: 25px 0 50px 0;
+    background-color: var(--colordarkgreen15);
+}
+
+.footer_botton{
+    display: flex;
+    align-items: center;
+}
+
+.up{
+    margin-left: 1vw;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colordarkgreen20);
+}
+
+.buttom_container{
+    margin-top: 25px;
+    padding: 16px 1vw;
+    background-color: var(--colordarkgreen20);
+    border-radius: 6px;
+    border: 1px solid rgb(203, 234, 123, 0.1);
+}
+
+.contact_container{
+    display: flex;
+    gap: 1vw;
+}
+
+.contact{
+    border-radius: 6px;
+    border: 1px solid rgb(203, 234, 123, 0.1);
+    padding: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.contact i{
+    font-size: 24px;
+    margin-right: 0.3vw;
+    color: var(--colorgreen70);
+}
+
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttom_container p{
+    color: white;
+}
+
+/* = ------------------------------------------------------ */
+
+main{
+    background-color: var(--colorgreen99);
+}
+
+/* ! ----------- HERO ----------- */
+.hero{
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.hero_img{
+    flex: 50%;
+}
+
+.hero_img img{
+    width: 100%;
+    height: auto;
+}
+
+.hero_container{
+    padding-right: 8vw;
+    flex: 50%;
+}
+
+.herz{
+    width: fit-content;
+    margin-bottom: 14px;
+    padding: 10px 0;
+    border-bottom: 3px solid var(--colorgreen70);
+}
+
+.hero_container p{
+    margin-bottom: 50px;
+}
+
+.hero_buttons{
+    display: flex;
+    gap: 1vw;
+}
+
+.hero_buttons button{
+    border-radius: 8px;
+    margin-bottom: 70px;
+    padding: 16px 1vw;
+    color: var(--colordarkgreen15);
+}
+
+.green{
+    background-color: var(--colorgreen70);
+}
+
+.transparent{
+    border: 1px solid var(--colorgreen85);
+    background-color: var(--colorgreen95);
+}
+
+.hero .sub_container{
+    display: flex;
+    align-items: center;
+}
+
+.images{
+    width: 130px;
+    height: 65px;
+    margin-right: 0.3vw;
+    padding: 8px;
+    border: 1px solid var(--colorgreen85);
+    border-radius: 58px;
+    position: relative;
+}
+
+.img1{
+    position: absolute;
+    z-index: 1;
+}
+
+.img2{
+    position: absolute;
+    right: 40px;
+    z-index: 2;
+}
+
+.img3{
+    position: absolute;
+    right: 10px;
+    z-index: 3;
+}
+
+.hero .sub_container p{
+    margin: auto 0;
+}
+
+/* ! ----------- FEATURES ----------- */
+.features{
+    margin: 0 8vw 174px 8vw;
+}
+
+.features h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.features > p{
+    text-align: center;
+    color: var(--colorgrey30);
+    margin-bottom: 80px;
+}
+
+.features_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.features_card{
+    background-color: var(--colorgreen95);
+    border: 1px solid var(--colorgreen85);
+    border-radius: 12px;
+    padding: 40px 50px;
+}
+
+.features_card > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.icon_container{
+    width: 68px;
+    height: 68px;
+    background-color: var(--colorgreen70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.7vw;
+    border-radius: 8px;
+}
+
+.features_card p{
+    color: var(--colorgrey30);
+}
+
+/* ! ----------- BLOGS ----------- */
+.blogs{
+    margin: 0 8vw 123px 8vw;
+}
+
+.blogs h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blogs > p{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--colorgrey30);
+    margin-bottom: 80px;
+}
+
+.blogs_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.blogs_card{
+    padding: 40px;
+    background-color: var(--colorgreen95);
+    border: 1px solid var(--colorgreen85);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blogs_card > div:nth-child(1) img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.blogs_card h4{
+    margin-bottom: 4px;
+}
+
+.blogs_card h3{
+    margin-bottom: 30px;
+}
+
+.blogs_card p{
+    color: var(--colorgrey30);
+    margin-bottom: 30px;
+}
+
+.coment{
+    border: 1px solid var(--colorgreen85);
+    border-radius: 12px;
+    padding: 20px;
+    background-color: var(--colorgreen99);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coment1, .coment2{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.coment2 div{
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--colorgreen85);
+    border-radius: 8px;
+    background-color: var(--colorgreen95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coment2 i{
+    font-size: 24px;
+    color: var(--colorgrey30);
+}
+
+/* ! ----------- kcal ----------- */
+.kcal{
+    margin: 0 8vw 51px 8vw;
+}
+
+.kcal h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.kcal > p{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--colorgrey30);
+    margin-bottom: 71px;
+}
+
+.calculate{
+    border: 1px solid var(--colorgreen85);
+    background-color: var(--colorgreen95);
+    border-radius: 12px;
+    padding: 41px 4vw 56px 4vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 45px 3vw;
+    margin-bottom: 48px;
+}
+
+.input_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input_container label{
+    font-family: "Urbanist-SemiBold";
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.input_container input, .input_container select{
+    height: 50px;
+    padding: 10px 0.5vw;
+    background-color: white;
+    color: var(--colorgrey30);
+    border-radius: 10px;
+    border: 1px solid var(--colorgreen85);
+}
+
+select option{
+    color: var(--colordarkgreen15);
+}
+
+select, select option:nth-child(1) {
+    color: #98989A;
+}
+
+.gender_auswaehlen {
+    margin: 0 auto 38px auto;
+    text-align: center;
+    color: var(--colorgrey30);
+}
+
+.gender_auswaehlen p{
+    margin-bottom: 10px;
+}
+
+.gender_auswaehlen label:nth-of-type(1){
+    margin-right: 3vw;
+}
+
+.gender_auswaehlen input{
+    display: none;
+}
+
+.custom-radio {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.custom-radio::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+}
+
+input:checked + .custom-radio::before {
+    border-color: var(--colorgreen70);
+    background-color: var(--colorgreen70);
+}
+
+.calculate button{
+    width: 350px;
+    padding: 18px 0;
+    color: var(--colordarkgreen15);
+    background-color: var(--colorgreen70);
+    border-radius: 12px;
+    margin-bottom: 51px;
+}
+
+.kcal_container{
+    margin: 0 auto;
+    width: 40vw;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--colorgreen70);
+    text-align: left;
+}
+
+.kcal_container th{
+    border-bottom: 1px solid var(--colorgreen70);
+    font-weight: 400;
+}
+
+th, td{
+    padding-top: 8px;
+    padding-left: 1vw;
+    padding-bottom: 5px;
+}
+
+/* ! ----------- PRICING ----------- */
+.pricing{
+    margin: 0 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing h2{
+    margin-bottom: 10px;
+}
+
+.pricing > p{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--colorgrey30);
+    margin-bottom: 80px;
+}
+
+.tabs_container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tabs{
+    border-radius: 8px;
+    border: 1px solid var(--colorgreen70);
+    padding: 10px;
+    margin-bottom: 14px;
+}
+
+.tabs button{
+    padding: 10px 24px;
+    border-radius: 6px;
+}
+
+.tabs button.active{
+    background-color: var(--colordarkgreen30);
+    color: white;
+}
+
+.yearly{
+    background-color: transparent;
+    color: var(--colordarkgreen15);
+}
+
+.tabs_container p{
+    color: var(--colorgrey30);
+}
+
+.plan_container{
+    margin-bottom: 49px;
+    display: flex;
+    gap: 20px;
+}
+
+.plan{
+    border-radius: 12px;
+    background-color: var(--colorgreen95);
+    border: 1px solid var(--colorgreen85);
+    padding: 50px;
+}
+
+.plan h3{
+    color: var(--colordarkgreen30);
+}
+
+.plan p{
+    color: var(--colorgrey30);
+    margin-bottom: 40px;
+}
+
+.plan span{
+    font-family: "Urbanist-SemiBold";
+    font-size: 34px;
+    color: var(--colordarkgreen30);
+}
+
+.plan_button{
+    width: 100%;
+    background-color: var(--colorgreen70);
+    padding: 18px;
+    border-radius: 8px;
+    color: var(--colordarkgreen15);
+}
