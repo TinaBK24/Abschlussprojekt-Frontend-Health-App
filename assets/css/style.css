@@ -249,7 +249,7 @@ main{
 .hero{
     margin-bottom: 150px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 2vw;
 }
 
@@ -265,6 +265,9 @@ main{
 .hero_container{
     padding-right: 8vw;
     flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .herz{
