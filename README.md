@@ -2,23 +2,43 @@
 
 Dieses Projekt ermöglicht die Berechnung des täglichen Energiebedarfs (in Kilokalorien und Kilojoule) basierend auf den Benutzereingaben und enthält zusätzliche interaktive Funktionen wie sanftes Scrollen und die Auswahl des aktiven Tarifs.
 
-## Funktionen
+## 🧰 Verwendete Technologien & Tools
 
-### 1. **Täglicher Energiebedarf Rechner**
-   - Der Rechner akzeptiert folgende Eingaben:
-     - **Größe** (in Zentimetern)
-     - **Alter** (in Jahren)
-     - **Gewicht** (in Kilogramm)
-     - **Aktivitätsniveau** (ein Multiplikator für die körperliche Aktivität)
-     - **Geschlecht** (männlich/weiblich)
-   - Er berechnet:
-     - **Kalorien (kcal)** und **Kilojoule (kJ)** pro Tag.
+- **HTML5** – zur Strukturierung der Webseite.
+- **CSS3** – für das Design, Layout und Styling.
+- **Responsive Design**:
+  - Media Queries (`style.css`, `tablet.css`)
+  - Anpassung für Tablet (bis 801px) und Mobile (bis 390px).
+- **Flexbox & Grid** – zur modernen und flexiblen Layout-Gestaltung.
+- **SCSS-ähnliche Struktur** – obwohl SCSS nicht direkt verwendet wurde, ist die Strukturierung und Wiederverwendbarkeit wie in SCSS aufgebaut.
+- **JavaScript (ES6)** – für die Logik und Interaktivität:
+  - Berechnung des Energiebedarfs (Basal Metabolic Rate).
+  - Sanftes Scrollen zu bestimmten Bereichen der Seite.
+  - Interaktive Umschaltung zwischen Monats- und Jahrestarif.
+- **Font Awesome** – für Icons in Buttons und UI-Elementen.
+- **Google Fonts: Urbanist** – für moderne Typografie.
+- **VS Code** – als Entwicklungsumgebung.
+- **Git & GitHub** – für Versionskontrolle und Veröffentlichung des Projekts.
 
-### 2. **Sanftes Scrollen**
-   - Eine Funktion für sanftes Scrollen zu einem bestimmten Header auf der Seite wird beim Klicken auf einen Button verwendet.
+## 🔧 Funktionen
 
-### 3. **Auswahl des aktiven Tarifs**
-   - Der Benutzer kann zwischen einem monatlichen und einem jährlichen Tarif wählen. Der ausgewählte Tarif wird auf der Seite angezeigt.
+### 🧮 Energiebedarfsrechner
+- Eingaben: Größe, Alter, Gewicht, Geschlecht, Aktivitätsfaktor.
+- Ausgabe: Tagesbedarf in kcal und kJ, mit und ohne Aktivitätsfaktor.
+
+### 📜 Sanftes Scrollen
+- Beim Klick auf einen Button scrollt die Seite sanft zu einem bestimmten Abschnitt.
+
+### 💰 Tarifauswahl
+- Benutzer kann zwischen "Monatlich" und "Jährlich" wählen.
+- Sichtbare Anzeige der aktiven Tarifoption.
+
+## 📱 Responsive Design
+- Optimiert für:
+  - Desktop (ab 970px)
+  - Tablet (ab 740px – 970px)
+  - Mobilgeräte (unter 740px)
+- Unterschiedliche Layouts und Navigation für verschiedene Bildschirmgrößen.
 
 ## Kontaktinformationen
 
