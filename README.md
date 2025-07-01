@@ -2,6 +2,8 @@
 
 Dieses Projekt ermöglicht die Berechnung des täglichen Energiebedarfs (in Kilokalorien und Kilojoule) basierend auf den Benutzereingaben und enthält zusätzliche interaktive Funktionen wie sanftes Scrollen und die Auswahl des aktiven Tarifs.
 
+🔗 **Live-Demo**: [Abschlussprojekt-Frontend-Health-App](https://tinabk24.github.io/Abschlussprojekt-Frontend-Health-App/)  
+
 ## 🧰 Verwendete Technologien & Tools
 
 - **HTML5** – zur Strukturierung der Webseite.
