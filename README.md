@@ -1,4 +1,4 @@
-# Abschlussprojekt Frontend Health App
+# Projekt: Frontend Health App
 
 Dieses Projekt ermöglicht die Berechnung des täglichen Energiebedarfs (in Kilokalorien und Kilojoule) basierend auf den Benutzereingaben und enthält zusätzliche interaktive Funktionen wie sanftes Scrollen und die Auswahl des aktiven Tarifs.
 
